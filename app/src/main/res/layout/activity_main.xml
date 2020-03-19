@@ -26,11 +26,37 @@
             android:layout_weight="1"
             android:text="둘째 프래그먼트"/>
     </LinearLayout>
-    <fragment
-        android:id="@+id/firstFrag"
+
+    <LinearLayout
+        android:id="@+id/secondFragLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        class="com.example.a20200319_01_fragment01.fagment.FirstFragment"/>
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/secondFrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.example.a20200319_01_fragment01.fagment.SecondFragment" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/firstFragLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/firstFrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.example.a20200319_01_fragment01.fagment.FirstFragment"/>
+
+    </LinearLayout>
+
 
 
 </LinearLayout>
