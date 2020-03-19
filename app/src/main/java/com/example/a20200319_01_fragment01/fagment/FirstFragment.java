@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.a20200319_01_fragment01.R;
 import com.example.a20200319_01_fragment01.databinding.FragmentFirstBinding;
@@ -27,15 +28,14 @@ public class FirstFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        
-        setupEvents();
-        setValues();
-        
-    }
+        binding.infoToastBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String name = binding.nameEdt.getText().toString();
+                String phone = binding.phoneEdt.getText().toString();
 
-    private void setValues() {
-    }
-
-    private void setupEvents() {
+                Toast.makeText(getActivity(), String.format("%s : %s", name, phone), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

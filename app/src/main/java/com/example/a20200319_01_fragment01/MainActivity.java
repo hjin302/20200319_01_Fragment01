@@ -31,6 +31,7 @@ public class MainActivity extends BaseActivity {
 //                firstFrag 보이게
                 binding.firstFragLayout.setVisibility(View.VISIBLE);
 //                secondFrag 숨김.
+                binding.secondFragLayout.setVisibility(View.GONE);
             }
         });
 
