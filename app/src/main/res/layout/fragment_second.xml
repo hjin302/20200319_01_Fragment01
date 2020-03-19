@@ -2,16 +2,40 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="#000000"
-    >
+    android:padding="10dp"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:textColor="#ffffff"
-        android:text="두번째 프래그먼트"/>
+        android:text="아이디"
+        android:textColor="@color/lightText"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/lightHint"
+        android:hint="아이디 입력"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/lightText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/password"
+        android:textColor="@color/lightText"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColorHint="@color/lightHint"
+        android:hint="@string/pw_input_hint" />
+
+
+
+
 
 </LinearLayout>
